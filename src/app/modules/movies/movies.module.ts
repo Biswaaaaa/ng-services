@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { MoviesListComponent } from './components/movies-list/movies-list.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { MoviesService } from './services/movies.service';
+import { MoviesRoutingModule } from './movies-routing.module';
 
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonModule, MoviesRoutingModule],
     declarations: [MoviesListComponent, MovieComponent],
     providers: [MoviesService]
 })
