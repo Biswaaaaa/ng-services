@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Character } from '../../classes/character';
-import { CharactersService } from '../../services/characters.service';
+import { Character } from '../../../../classes/character';
+import { CharactersService } from '../../../../services/characters.service';
 
 
 @Component({
