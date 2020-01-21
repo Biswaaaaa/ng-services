@@ -1,0 +1,7 @@
+mat-list mat-list-item [mat-line].wrap {
+    white-space: pre-wrap;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 3vw;
+    margin-top: 2vh;
+}

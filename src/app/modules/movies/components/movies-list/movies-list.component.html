@@ -1,7 +1,22 @@
-<h2>Star Wars Movies</h2>
+<mat-toolbar color="secondary">
+    <span>Star Wars Movies</span>
+</mat-toolbar>
+  
+  <mat-list>
+    <mat-list-item *ngFor="let movie of movies">
+      <h3 mat-line>Episode {{movie.episode_id}} - {{movie.title}}</h3>
+      <p mat-line>Release Date: {{movie.release_date | date:'fullDate' | uppercase}}</p>
+      <p mat-line>Director: {{movie.director}}</p>
+      <p mat-line>Producer: {{movie.producer}}</p>
+      <p mat-line>Opening Crawl:</p>
+      <p mat-line class="wrap">{{movie.opening_crawl}}</p>
+    </mat-list-item>
+  </mat-list>
+
+  <!-- <h2>Star Wars Movies</h2>
 <ul>
     <li *ngFor="let movie of movies">
         <app-movie [movie]="movie"></app-movie>
 
     </li>
-</ul>
+</ul> -->
